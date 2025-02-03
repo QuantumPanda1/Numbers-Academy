@@ -29,6 +29,13 @@
     <nav class="bg-indigo-600 text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
             <a href="index.html" class="text-xl font-bold">THE NUMBERS ACADEMY</a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-toggle" class="md:hidden">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Desktop Navigation -->
             <div class="hidden md:flex space-x-6">
                 <a href="courses-page.html" class="hover:text-indigo-200 transition">Courses</a>
                 <a href="abacus-page.html" class="hover:text-indigo-200 transition">Abacus</a>
@@ -37,6 +44,25 @@
                 <a href="comments-page.html" class="hover:text-indigo-200 transition">Reviews</a>
                 <a href="about-page.html" class="hover:text-indigo-200 transition">About</a>
                 <a href="contact-page.html" class="hover:text-indigo-200 transition">Contact</a>
+            </div>
+
+            <!-- Mobile Navigation Dropdown -->
+            <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-indigo-600 z-50 transform -translate-x-full transition-transform duration-300 ease-in-out">
+                <div class="flex justify-between items-center p-4">
+                    <a href="index.html" class="text-xl font-bold">THE NUMBERS ACADEMY</a>
+                    <button id="mobile-menu-close" class="text-white text-2xl">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="flex flex-col items-center space-y-4 mt-8">
+                    <a href="courses-page.html" class="text-white text-xl hover:text-indigo-200 transition">Courses</a>
+                    <a href="abacus-page.html" class="text-white text-xl hover:text-indigo-200 transition">Abacus</a>
+                    <a href="vedic-math-page.html" class="text-white text-xl hover:text-indigo-200 transition">Vedic Maths</a>
+                    <a href="rubiks-cube-page.html" class="text-white text-xl hover:text-indigo-200 transition">Rubik's Cube</a>
+                    <a href="comments-page.html" class="text-white text-xl hover:text-indigo-200 transition">Reviews</a>
+                    <a href="about-page.html" class="text-white text-xl hover:text-indigo-200 transition">About</a>
+                    <a href="contact-page.html" class="text-white text-xl hover:text-indigo-200 transition">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
