@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Previous head section remains the same -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Numbers Academy - Empowering Young Minds</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
-        /* Previous styles remain the same */
         .quote-carousel {
             animation: fadeInOut 12s infinite;
         }
@@ -21,97 +22,64 @@
                             url('/api/placeholder/1920/1080');
             background-size: cover;
         }
+
+        .course-card {
+            transition: transform 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .mobile-menu-open {
+            transform: translateX(0) !important;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-indigo-600 text-white p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-xl font-bold">THE NUMBERS ACADEMY</a>
-            
-            <!-- Mobile Menu Toggle -->
-            <button id="mobile-menu-toggle" class="md:hidden">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
-
-            <!-- Desktop Navigation -->
-            <div class="hidden md:flex space-x-6">
-                <a href="courses-page.html" class="hover:text-indigo-200 transition">Courses</a>
-                <a href="abacus-page.html" class="hover:text-indigo-200 transition">Abacus</a>
-                <a href="vedic-math-page.html" class="hover:text-indigo-200 transition">Vedic Maths</a>
-                <a href="rubiks-cube-page (1).html" class="hover:text-indigo-200 transition">Rubik's Cube</a>
-                <a href="comments-page.html" class="hover:text-indigo-200 transition">Reviews</a>
-                <a href="about-page.html" class="hover:text-indigo-200 transition">About</a>
-                <a href="contact-page.html" class="hover:text-indigo-200 transition">Contact</a>
-            </div>
-
-            <!-- Mobile Navigation Dropdown -->
-            <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-indigo-600 z-50 transform -translate-x-full transition-transform duration-300 ease-in-out">
-                <div class="flex justify-between items-center p-4">
-                    <a href="index.html" class="text-xl font-bold">THE NUMBERS ACADEMY</a>
-                    <button id="mobile-menu-close" class="text-white text-2xl">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                <div class="flex flex-col items-center space-y-4 mt-8">
-                    <a href="courses-page.html" class="text-white text-xl hover:text-indigo-200 transition">Courses</a>
-                    <a href="abacus-page.html" class="text-white text-xl hover:text-indigo-200 transition">Abacus</a>
-                    <a href="vedic-math-page.html" class="text-white text-xl hover:text-indigo-200 transition">Vedic Maths</a>
-                    <a href="rubiks-cube-page (1).html" class="text-white text-xl hover:text-indigo-200 transition">Rubik's Cube</a>
-                    <a href="comments-page.html" class="text-white text-xl hover:text-indigo-200 transition">Reviews</a>
-                    <a href="about-page.html" class="text-white text-xl hover:text-indigo-200 transition">About</a>
-                    <a href="contact-page.html" class="text-white text-xl hover:text-indigo-200 transition">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Hero Section -->
-    <header class="pt-32 pb-20 hero-pattern text-white">
+    <!-- Previous content remains the same until the footer -->
+    
+    <!-- Updated Footer -->
+    <footer class="bg-indigo-900 text-white py-12">
         <div class="container mx-auto px-4">
-            <div class="animate-fade-in text-center max-w-4xl mx-auto">
-                <h1 class="text-5xl md:text-7xl font-bold mb-4">THE NUMBERS ACADEMY</h1>
-                <p class="text-2xl md:text-3xl mb-8 font-light">EMPOWERING YOUNG MINDS</p>
-                <div id="quote-carousel" class="mb-12 h-20">
-                    <p class="quote-carousel text-xl md:text-2xl italic">Where Numbers Become Friends, Not Fears</p>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">The Numbers Academy</h3>
+                    <p class="text-indigo-200">Empowering young minds through mathematical excellence.</p>
                 </div>
-                <button class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold hover-scale text-lg">
-                    Start Your Journey
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <!-- Quote Boxes Section -->
-    <section class="py-12 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                    <div class="text-indigo-600 text-4xl mb-4">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Unlock Mathematical Potential</h3>
-                    <p class="text-gray-600">Transform your child's fear of numbers into confidence and mastery.</p>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Programs</h4>
+                    <ul class="space-y-2">
+                        <li><a href="abacus-page.html" class="text-indigo-200 hover:text-white">Abacus Training</a></li>
+                        <li><a href="vedic-math-page.html" class="text-indigo-200 hover:text-white">Vedic Mathematics</a></li>
+                        <li><a href="rubiks-cube-page (1).html" class="text-indigo-200 hover:text-white">Rubik's Cube</a></li>
+                    </ul>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                    <div class="text-indigo-600 text-4xl mb-4">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">One-Stop Solution</h3>
-                    <p class="text-gray-600">From basic arithmetic to advanced problem-solving, we've got you covered.</p>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about-page.html" class="text-indigo-200 hover:text-white">About Us</a></li>
+                        <li><a href="comments-page.html" class="text-indigo-200 hover:text-white">Reviews</a></li>
+                        <li><a href="contact-page.html" class="text-indigo-200 hover:text-white">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                    <div class="text-indigo-600 text-4xl mb-4">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Excellence Through Practice</h3>
-                    <p class="text-gray-600">Watch your child transform into a confident mathematical thinker.</p>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-indigo-200">
+                        <li>204 C Block, Vaidehi Nivas</li>
+                        <li>Golden Palms, Achyuta Reddy Marg</li>
+                        <li>Vidya Nagar, Hyderabad</li>
+                        <li>Phone: +91 7893125586</li>
+                        <li>Email: glakshmiabacus@gmail.com</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
-    <!-- Rest of the content remains the same but adding script for quote carousel -->
+    <!-- Complete JavaScript -->
     <script>
+        // Quote Carousel
         const quotes = [
             "Where Numbers Become Friends, Not Fears",
             "Transforming Math Anxiety into Mathematical Mastery",
@@ -135,7 +103,64 @@
 
         setInterval(changeQuote, 4000);
 
-        // Previous JavaScript code remains the same
+        // Mobile Menu Functionality
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuToggle && mobileMenuClose && mobileMenu) {
+            mobileMenuToggle.addEventListener('click', () => {
+                mobileMenu.classList.add('mobile-menu-open');
+            });
+
+            mobileMenuClose.addEventListener('click', () => {
+                mobileMenu.classList.remove('mobile-menu-open');
+            });
+        }
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animation for elements
+        function reveal() {
+            const reveals = document.querySelectorAll('.course-card');
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                if (elementTop < windowHeight - 150) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        reveal(); // Initial check on page load
+
+        // Form validation for contact forms if present
+        const forms = document.querySelectorAll('form');
+        forms.forEach(form => {
+            form.addEventListener('submit', function(e) {
+                const requiredFields = form.querySelectorAll('[required]');
+                requiredFields.forEach(field => {
+                    if (!field.value) {
+                        e.preventDefault();
+                        field.classList.add('border-red-500');
+                    } else {
+                        field.classList.remove('border-red-500');
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>
